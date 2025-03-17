@@ -6,8 +6,8 @@
 
 .landing h1 {
     font-size: 7rem;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
 }
 
 .landing img {
@@ -23,12 +23,15 @@
     padding-right: 1rem;
 }
 
+.main-content {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
 /* Personal Statement */
 .personal-statement {
     padding-top: 8rem;
     padding-bottom: 8rem;
-    /* background-color: #e3e3e3; */
-    /* width: 25vw; */
     padding-left: 15vw;
     padding-right: 15vw;
 }
@@ -36,4 +39,51 @@
 .personal-statement p {
     font-size: 1.8rem;
     font-weight: 600;
+}
+
+/* Navigation */
+
+div.navbar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    /* position: absolute; */
+    /* top: 0; */
+    padding: 1rem;
+}
+
+div.navbar-left {
+    display: flex;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    /* padding-left: 1rem; */
+    /* padding-top: 1rem; */
+}
+
+div.navbar-right {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    /* white-space: nowrap; */
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    /* padding-right: 1rem; */
+    /* padding-top: 1rem; */
+}
+
+.navbar .separator {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+    color: var(--accent-red);
+}
+
+.navbar a {
+    color: black;
+}
+
+.navbar a :hover, .navbar a :focus, .navbar a :active {
+    color: var(--accent-red);
 }

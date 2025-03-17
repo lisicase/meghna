@@ -2,6 +2,7 @@
 import './App.css'
 import profilePhoto from '/profile.jpg'
 import NewReleases from './NewReleases'
+import { Routes, Route, Link } from 'react-router-dom';
 // Assets
 import { FaInstagram, FaSpotify } from 'react-icons/fa';
 import { SiApplemusic } from "react-icons/si";
@@ -11,20 +12,51 @@ function App() {
 
   return (
     <>
+      <NavBar />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/shows" element={<Shows />} />
+        <Route path="/listen" element={<Listen />} />
+      </Routes>
+    </>
+  )
+}
+
+function NavBar() {
+  return (
+    <>
+    <div className="navbar">
+      <div className="navbar-left">
+        <Link to="/">Meghna</Link>
+      </div>
+      <div className="navbar-right">
+        <Link to="/listen">Listen</Link>
+        <p className="separator">/</p>
+        <Link to="/shows">Shows</Link>
+      </div>
+    </div>
+    </>
+  )
+}
+
+function Home() {
+  return (
+    <>
       <Landing />
       <PersonalStatement />
       <NewReleases />
       <Footer />
-      <>
-      {/* <Navigator />
-      <Switch>
-        <Route exact path="/portfolio" render={renderPortfolio} />
-        <Route path="/experience" component={Experience} />
-        <Route path="/about" component={About} />
-        <Route path="/portfolio/:projectId" render={renderProject} />
-        <Redirect to="/portfolio" />
-      </Switch> */}
-      </>
+    </>
+  )
+}
+
+function Shows() {
+  return (
+    <>
+    <h1>Shows Page</h1>
+    <div>
+      test
+    </div>
     </>
   )
 }
@@ -45,7 +77,6 @@ function Listen() {
       <p>
         <a href="TODO"><FaSpotify className="contact-icon" size="50" /></a>
         <a href="TODO"><SiApplemusic className="contact-icon" size="50" /></a>
-        {/* <a href="https://www.instagram.com/meghna4now/"><FaInstagram className="contact-icon" size="24" /></a> */}
       </p>
     </div>
   )
@@ -66,7 +97,6 @@ function Footer() {
     <footer>
       <div>
         <p>
-          {/* <a href="TODO"><FaSpotify className="contact-icon" size="24" /></a> */}
           <a href="https://www.instagram.com/meghna4now/"><FaInstagram className="contact-icon" size="24" /></a>
         </p>
         <p>&copy; {currentYear} Meghna Lohia</p>
