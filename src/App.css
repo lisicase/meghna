@@ -1,0 +1,39 @@
+#root {
+    padding: 0;
+}
+
+/* Landing */
+
+.landing h1 {
+    font-size: 7rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.landing img {
+    /* height: 40rem; */
+    height: 35vw;
+}
+
+.landing .listen {
+    padding: 1rem;
+}
+
+.landing .listen .contact-icon {
+    padding-right: 1rem;
+}
+
+/* Personal Statement */
+.personal-statement {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    /* background-color: #e3e3e3; */
+    /* width: 25vw; */
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.personal-statement p {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
