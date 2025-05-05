@@ -1,0 +1,19 @@
+td p {
+    padding-right: 2rem;
+    margin: 0;
+}
+
+td {
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+div.showarchive-list {
+    display: flex;
+    width: 90vw;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* justify-content: center; */
+    /* filter: contrast(170%) brightness(1000%); */
+    /* background-color: var(--accent-red); */
+}

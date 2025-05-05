@@ -2,7 +2,8 @@
 import './App.css'
 import profilePhoto from '/profile.jpg'
 import NewReleases from './NewReleases'
-import { Routes, Route, Link } from 'react-router-dom';
+import ShowsPage from './Shows'
+import { Routes, Route, Link } from 'react-router-dom'
 // Assets
 import { FaInstagram, FaSpotify } from 'react-icons/fa';
 import { SiApplemusic } from "react-icons/si";
@@ -52,12 +53,7 @@ function Home() {
 
 function Shows() {
   return (
-    <>
-    <h1>Shows Page</h1>
-    <div>
-      test
-    </div>
-    </>
+    <ShowsPage />
   )
 }
 
