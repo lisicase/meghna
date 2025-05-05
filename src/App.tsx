@@ -1,10 +1,10 @@
 // import { useState } from 'react'
 import './App.css'
-import profilePhoto from '/profile.jpg'
 import NewReleases from './NewReleases'
 import ShowsPage from './Shows'
 import { Routes, Route, Link } from 'react-router-dom'
 // Assets
+import profilePhoto from '/img/guitar_vertical.png'
 import { FaInstagram, FaSpotify } from 'react-icons/fa';
 import { SiApplemusic } from "react-icons/si";
 
@@ -61,7 +61,7 @@ function Landing() {
   return (
     <div className="landing">
       <h1>Meghna</h1>
-      <img src={profilePhoto} alt="TODO" />
+      <img src={profilePhoto} alt="Meghna leaning on guitar." />
       <Listen />
     </div>
   )

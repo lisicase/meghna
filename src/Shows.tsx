@@ -1,9 +1,12 @@
 import './Shows.css'
+// Assets
+import showsPhoto from '/img/guitar_landscape-crop.png'
 
 function ShowsPage() {
     return (
         <div>
             <h1>Upcoming Shows</h1>
+            <img src={showsPhoto} alt="Meghna sitting on the floor, playing guitar." />
             <div style={{padding: '2rem'}} />
             <UpcomingShowsList />
             <h1>Shows Archive</h1>
