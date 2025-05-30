@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 import './App.css'
-import NewReleases from './NewReleases'
+import { VideoCard, NewReleases } from './NewReleases'
 import ShowsPage from './Shows'
 import { Routes, Route, Link } from 'react-router-dom'
 // Assets
@@ -9,6 +9,73 @@ import { FaInstagram, FaSpotify } from 'react-icons/fa';
 import { SiApplemusic } from "react-icons/si";
 
 function App() {
+  // const [count, setCount] = useState(0)
+
+  return (
+    <>
+      {/*<NavBar />*/}
+      <Routes>
+        <Route index element={<BlackDressReleasePage />} />
+        <Route path="/blackdressreleaseparty2025" element={<ReleasePartyInvite />} />
+      </Routes>
+    </>
+  )
+}
+
+function BlackDressReleasePage() {
+  return (
+    <>
+      <Name />
+      <VideoCard />
+      <Listen />
+      <BlackDressBioPhoto />
+      <Footer />
+    </>
+  )
+}
+
+function Name() {
+  return (
+    <div className="landing">
+      <h1>Meghna</h1>
+    </div>
+  )
+}
+
+function BlackDressBioPhoto() {
+  return (
+    <div style={{ display:"flex", alignItems:"center", flexWrap:"wrap" }}>
+      <div style={{ flexGrow:"1" }}>
+        <img style={{ maxWidth:"20vw"}} src={profilePhoto} alt="Meghna leaning on guitar." />
+      </div>
+      <div style={{ flexGrow:"1", padding:"4em", maxWidth:"40vw" }}>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+    </div>
+  )
+}
+
+////////////
+
+function ReleasePartyInvite() {
+  return (
+    <>
+      <h1>Black Dress Release Party</h1>
+      <p><i>Join Meghna in celebrating the release of her first song, Black Dress.</i></p>
+      <h2>Logistics</h2>
+      <p><b>Date: </b>June 27, 2025</p>
+      <p><b>Time: </b> 7pm - 10pm</p>
+      <p><b>Location: </b>Blue Light Studios</p>
+
+      <h2>Theme</h2>
+      <p><b>Dress Code: </b>Red, White, and <s>Blue</s>Black</p>
+    </>
+  )
+}
+
+/*********************************************************/
+
+function OriginalApp() {
   // const [count, setCount] = useState(0)
 
   return (

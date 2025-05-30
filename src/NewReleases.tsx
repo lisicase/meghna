@@ -4,7 +4,7 @@
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import '../style.css';
 
-function NewReleases() {
+export function NewReleases() {
     return (
         <div className="flex-container">
             <h2>New Releases</h2>
@@ -35,10 +35,10 @@ function AllCards() {
 }
 
 type VideoCardProps = {
-    title: string,
+    title?: string,
   }
 
-const VideoCard = ({title}: VideoCardProps) => {
+export const VideoCard = ({title}: VideoCardProps) => {
     return (
         <div>
             <YoutubeEmbed embedId="UMdSUKvRw9o" title="Black Dress music video" />
