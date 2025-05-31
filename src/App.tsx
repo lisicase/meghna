@@ -2,9 +2,11 @@
 import './App.css'
 import { VideoCard, NewReleases } from './NewReleases'
 import ShowsPage from './Shows'
+import ReleasePartyPage from './Release Party/ReleasePartyPage'
 import { Routes, Route, Link } from 'react-router-dom'
 // Assets
 import profilePhoto from '/img/guitar_vertical.png'
+import blackDressPose from '/img/blackDress_pose.png'
 import { FaInstagram, FaSpotify } from 'react-icons/fa';
 import { SiApplemusic } from "react-icons/si";
 
@@ -16,7 +18,7 @@ function App() {
       {/*<NavBar />*/}
       <Routes>
         <Route index element={<BlackDressReleasePage />} />
-        <Route path="/blackdressreleaseparty2025" element={<ReleasePartyInvite />} />
+        <Route path="/blackdressreleaseparty2025" element={<ReleasePartyPage />} />
       </Routes>
     </>
   )
@@ -36,9 +38,12 @@ function BlackDressReleasePage() {
 
 function Name() {
   return (
-    <div className="landing">
-      <h1>Meghna</h1>
-    </div>
+    <>
+      <style>@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');</style>
+      <div className="landing" style={{fontFamily:"Beth Ellen"}}>
+        <h1>Meghna</h1>
+      </div>
+    </>
   )
 }
 
@@ -65,17 +70,35 @@ function BlackDressBioPhoto() {
 
 function ReleasePartyInvite() {
   return (
-    <>
-      <h1>Black Dress Release Party</h1>
-      <p><i>Join Meghna in celebrating the release of her first song, Black Dress.</i></p>
-      <h2>Logistics</h2>
-      <p><b>Date: </b>June 27, 2025</p>
-      <p><b>Time: </b> 7pm - 10pm</p>
-      <p><b>Location: </b>Blue Light Studios</p>
-
-      <h2>Theme</h2>
-      <p><b>Dress Code: </b>Red, White, and <s>Blue</s>Black</p>
-    </>
+    <div style={{display:"flex", flexWrap:"wrap", fontFamily:"Georgia", backgroundColor:"black", color:"white"}}>
+      <style>@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');</style>
+      <div style={{display:"flex", alignItems:"top"}}>
+        <h1>Black Dress Release Party</h1>
+        <div>
+          <div style={{textAlign:"left"}}>
+            <p>Dear Guests,</p>
+            <p>You’re invited to celebrate the release of Black Dress, my first song and music video. 
+              Join us at <b>Blue Light Studios</b> on <b>June 28th</b> at <b>6pm to 10pm</b> for snacks and good tunes, 
+              all sponsored by the newly divorceés. Dress code is <b>Red, White, and <s>Blue</s>Black</b>, 
+              and there will be drinks for purchase provided by Blue Light Studios.</p>
+            <p>We wouldn’t have been able to do this without your support, 
+              so this evening is as much about Black Dress as it is about celebrating you.</p>
+            <p>See you there! Reach out to the below contacts if you have questions.</p>
+            <p>Cheers,</p>
+            <p style={{fontFamily:"Beth Ellen"}}>Meghna</p>
+          </div>
+          <div style={{display:"flex", alignItems:"top", paddingTop:"4rem"}}>
+            <div style={{ textAlign:"left", paddingRight:"4rem" }}>
+              <p><b>Date: </b>June 28, 2025</p>
+              <p><b>Time: </b> 6pm - 10pm</p>
+              <p><b>Location: </b>Blue Light Studios</p>
+              <p><b>Dress Code: </b>Red, White, and <s>Blue</s>Black</p>
+            </div>
+            <img style={{ maxWidth:"20vw"}} src={blackDressPose} alt="Meghna wearing black wedding dress and holding flowers." />
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 
