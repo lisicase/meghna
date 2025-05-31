@@ -49,7 +49,13 @@ function BlackDressBioPhoto() {
         <img style={{ maxWidth:"20vw"}} src={profilePhoto} alt="Meghna leaning on guitar." />
       </div>
       <div style={{ flexGrow:"1", padding:"4em", maxWidth:"40vw" }}>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>Meghna is a folk rockstar born and raised in beautiful Vancouver, Canada.
+          She's on a mission to use her voice to ignite critical thinking and empathy globally 
+          and would love for you to join her. Meghna is inspired by storytellers like Bob Dyla and Joni Mitchell, 
+          modern icons like Lana Del Rey and Taylor Swift, and the classic genius of The Rolling Stones, 
+          The Beatles, and Fleetwood Mac. Her music is honest, enigmatic, and human, and her goal is to 
+          build a world that reflects those ideals. From learning to play the guitar to learning to code, 
+          Meghna has been gearing up her whole life to have a great impact on the world—now, she needs your help.</p>
       </div>
     </div>
   )
