@@ -5,7 +5,6 @@ import blackDressPose from '/img/blackDress_pose.png'
 function ReleasePartyPage() {
     return (
       <body style={{backgroundColor:"black", color:"white", fontFamily:"Georgia"}}>
-        <style>@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');</style>
         <div className="releasePartyBox">
           <h1>Black<br/>Dress<br/>Release<br/>Party</h1>
           <div>
