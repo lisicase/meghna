@@ -15,6 +15,7 @@
 .eventImage {
     padding-bottom: 1rem;
     align-self: center;
+    max-width: 90vw;
 }
 
 .eventDetails {
